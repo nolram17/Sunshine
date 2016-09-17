@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sunshine_blue"
+    android:layout_weight="1"
+    >
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+
+        android:layout_marginLeft="60dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:layout_gravity="left"
+            android:id="@+id/list_item_date_textview"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High"
+            android:textSize="72sp"
+            android:layout_gravity="left"
+            android:id="@+id/list_item_high_textview"
+            android:textColor="#ffffff"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="low"
+            android:layout_gravity="left"
+            android:textSize="36sp"
+            android:textColor="#ffffff"
+            android:id="@+id/list_item_low_textview"
+ />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:gravity="center">
+
+        <ImageView
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/list_item_icon"
+            android:src="@mipmap/ic_launcher"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#ffffff"
+            android:text="forecast"
+            android:id="@+id/list_item_forecast_textview"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
